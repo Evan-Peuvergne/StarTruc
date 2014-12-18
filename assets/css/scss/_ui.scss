@@ -1,0 +1,35 @@
+/* BUTTONS */
+
+.btn{
+    display: inline-block;
+    position:relative;
+    font-size:0.9em;
+    text-transform: uppercase;
+    font-weight:400;
+    text-decoration: none;
+    padding:15px 40px;
+    margin:20px 0px;
+    transition:all 0.3s ease;
+    
+    &.btn-black{
+        color:#a38c7f;
+        border:2px solid #a38c7f;
+        
+        &:hover{
+            background-color:#a38c7f;
+            color:#ffffff;
+        }
+        
+    }
+    
+    &.btn-white{
+        color:white;
+        border:2px solid #ffffff;
+        
+        &:hover{
+            background-color:#ffffff;
+            color:#a38c7f;
+        }
+    }
+    
+}

@@ -1,0 +1,46 @@
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/home.css">
+
+
+<!-- HTML -->
+
+<ul class="home-scene">
+	<img src="assets/img/home/etoile-de-la-mort.png" alt="" class="home-scene-death-star">
+	<img src="assets/img/home/spaceship-left2.png" alt="" class="home-scene-tie-fighter-front">
+	<img src="assets/img/home/spaceship-left1.png" alt="" class="home-scene-tie-fighter-back">
+	<img src="assets/img/home/spaceship-center.png" alt="" class="home-scene-star-fighter">
+</ul>
+
+<img src="assets/img/home/starwars-logo2.png" alt="" class="home-logo">
+
+<div class="home-controls">
+	<a href="#personnage" id="btn-start-experience" class="btn btn-white">Commencer</a>
+</div>
+
+    <!-- Le texte scrollable -->
+    <!-- <div id="titles">
+		<div id="titlecontent">
+			<p class="center">The Battle of Charcters<br/>The Adventure Begins Now!</p>
+			<p>Who is the best character in star wars? Who is the best at fighting? Who is the best looking character? Do you have a favorite one already? Vote for him NOW!.</p>
+		</div>
+	</div> -->
+
+
+<!-- JS -->
+<script src="assets/js/librairies/parallax.js"></script>
+<script>
+	
+	var scene = document.getElementsByTagNames('home-scene')[0];
+ 	var parallax = new Parallax(scene);
+
+ //    window.onload = checkUser();
+    // LocalStorage
+    // function checkUser(){
+    // 	var old = localStorage.getItem('old');
+    // 	var perso = old.value;
+    // 	if(old != null){
+    // 		window.location.replace("#");
+    // 	}
+    // }
+
+</script>

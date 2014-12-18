@@ -1,0 +1,332 @@
+.content-home {
+	background: #000 url(../img/home/bg.png) no-repeat;
+	overflow: hidden;
+	-webkit-background-size: cover;
+
+	.home-scene{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+
+		.home-scene-death-star{
+			display: block;
+			width:20%;
+			min-width:170px;
+			height:auto;
+			position:absolute;
+			top:10%;
+			right:10%;
+		}
+
+		.home-scene-tie-fighter-front{
+			display:block;
+			width:25%;
+			min-width:150px;
+			height:auto;
+			position:absolute;
+			top:7%;
+			left:7%;
+			animation:spaceship-floating-1 5s ease-in-out infinite 0s;
+			z-index:20;
+		}
+
+		.home-scene-tie-fighter-back{
+			display:block;
+			width:15%;
+			min-width:100px;
+			height:auto;
+			position:absolute;
+			top:25%;
+			left:20%;
+			animation:spaceship-floating-2 7s ease-in-out infinite 0s;
+			z-index:10;
+		}
+
+		.home-scene-star-fighter{
+			display:block;
+			width:50%;
+			min-width:400px;
+			height:auto;
+			position:absolute;
+			bottom:-20%;
+			right:2%;
+			animation:spaceship-floating-1 5s ease-in-out 0s;
+			z-index:30;
+		}
+
+	}
+
+	.home-logo{
+		display:block;
+		width:30%;
+		min-width:200px;
+		position:relative;
+		margin:auto;
+		top:20%;
+		z-index:40;
+	}
+
+	.home-controls{
+		position:absolute;
+		bottom:10%;
+		left:0px;
+		width:100%;
+		text-align:center;
+
+		a.btn{
+			position:relative;
+			z-index:40;
+		}
+
+	}
+
+}
+
+// #background {
+// 	position: absolute;
+// 	top:0;
+// 	margin-top: -30px;
+// 	height: 100%;
+// 	width: 100%;
+// }
+
+// /* Ajouter animation aux vaisseaux pr donner impression de flotaison */
+// #spaceshipLeft1 img {
+// 	-webkit-animation: floating 7s ease-in-out infinite 0s;
+
+// 	animation: floating 7s ease-in-out infinite 0s;
+
+// }
+
+// #spaceshipLeft2 img {
+// 	-webkit-animation: floating2 5s ease-in-out infinite 0s;
+
+// 	animation: floating2 5s ease-in-out infinite 0s;
+
+// }
+
+// #spaceship img {
+// 	position:absolute;
+// 	margin-top: 15%;
+// 	margin-left: 25%;
+// 	width: 75%;
+// 	height: 75%;
+
+// 	-webkit-animation: floating 5s ease-in-out infinite 0s;
+
+// 	animation: floating 5s ease-in-out infinite 0s;
+
+// }
+
+// .parallax {
+// 	position: absolute;
+// 	width: 100% ;
+// 	height: 100%;
+// }
+
+// .parallax li
+// {
+// 	width: 100%;
+// 	padding: 56.25% 0 0 0;
+// 	overflow: hidden;
+// }
+
+// .parallax img
+// {
+// 	position: absolute;
+// 	display: block;
+// 	max-width: 100%;
+// 	max-height: 100%;
+// 	left: 0;
+// 	right: 0;
+// 	top: 0;
+// 	bottom: 0;
+// 	margin: auto;
+// }
+
+// /*Bouton pour commencer l'experience*/
+// #button {
+
+// 	position: absolute;
+// 	top: 83%;
+// 	left: 42%;
+// 	width: 15% ;
+// 	/*	height:5%;*/
+// 	z-index: 10;
+// 	border: 2px solid #97796F;
+// 	padding: 10px;
+// 	text-align: center;
+// }
+
+
+
+// /*Loo Star Wars*/
+
+// .logo img
+// {
+// 	position: absolute;
+// 	display: block;
+// 	max-width: 100%;
+// 	max-height: 100%;
+// 	left: 0;
+// 	right: 0;
+// 	top: 0;
+// 	bottom: 0;
+// 	margin: auto;
+// }
+
+// .logo {
+// 	position: absolute;
+// 	top: 25%;
+// 	left: 30%;
+// 	opacity: 1;
+// 	width: 40% ;
+// 	height: 20%;
+// 	z-index: 10;
+// 	-webkit-animation: scroll2 2s linear 0s paused;
+// 	animation: scroll2 2s linear 0s paused;
+// }
+
+// .animjs {
+
+// 	-webkit-animation: shipLeaves 3s ease;
+// 	-webkit-animation-iteration-count: 1;
+// 	-webkit-animation-fill-mode: forwards;
+
+// 	animation: shipLeaves 3s ease;
+// 	animation-iteration-count: 1;
+// 	animation-fill-mode: forwards;
+// }
+
+// .animjs2 {
+
+// 	-webkit-animation: buttonLeaves 3s ease;
+// 	-webkit-animation-iteration-count: 1;
+// 	-webkit-animation-fill-mode: forwards;
+
+// 	animation: buttonLeaves 3s ease;
+// 	animation-iteration-count: 1;
+// 	animation-fill-mode: forwards;
+// }
+
+
+// /* the interesting 3D scrolling stuff */
+// #titles
+// {
+// 	color: #ff0;
+// 	position: absolute;
+// 	width: 18em;
+// 	height: 50em;
+// 	bottom: -20px;
+// 	left: 50%;
+// 	margin-left: -9em;
+// 	font-size: 350%;
+// 	text-align: justify;
+// 	overflow: hidden;
+// 	-webkit-transform-origin: 50% 100%;
+// 	transform-origin: 50% 100%;
+// 	/* Effet Penché*/
+// 	-webkit-transform: perspective(300px) rotateX(25deg);
+// 	transform: perspective(300px) rotateX(25deg);
+// }
+
+// #titles p.center
+// {
+// 	text-align: center;
+// }
+
+// /* Effet de défilement*/
+// #titlecontent
+// {
+// 	opacity: 0;
+// 	position: absolute;
+// 	top: 100%;
+// 	-webkit-animation: scroll 100s linear 2s infinite paused;
+// 	animation: scroll 100s linear 2s infinite paused;
+// }
+
+
+
+
+
+/* Partie animations */
+
+/*Animation ds vaisseaux*/
+
+@keyframes spaceship-floating-1 {
+	0% {transform: translate(0, 0px);}
+	50% {transform: translate(0, -20px);}
+	100% {transform: translate(0, 0px);}
+}
+
+@keyframes spaceship-floating-2 {
+	0% {transform: translate(0, 0px);}
+	50% {transform: translate(0, 20px);}
+	100% {transform: translate(0, 0px);}
+}
+
+/*Quand le titre part après le clique*/
+@-webkit-keyframes logoLeaves {
+	0% {opacity: 1; -webkit-transform: scale(1,1);}
+	100% {opacity: 0; -webkit-transform: scale(0,0);}
+}
+
+@keyframes logoLeaves {
+	0% {opacity: 1; transform: scale(1,1);}
+	100% {opacity: 0; transform: scale(0,0);}
+}
+
+/* Animation pour faire degager les veaisseaux*/
+@-webkit-keyframes shipLeaves {
+	0% {opacity: 1; -webkit-transform: scale(1,1);}
+	100% {opacity: 0; -webkit-transform: scale(0,0);}
+}
+
+@keyframes shipLeaves {
+	0% {opacity: 1; transform: scale(1,1);}
+	100% {opacity: 0; transform: scale(0,0);}
+}
+
+@-webkit-keyframes buttonLeaves {
+	0% {opacity: 1; -webkit-transform:}
+	100% {opacity: 0; -webkit-transform:}
+}
+
+@-keyframes buttonLeaves {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-webkit-keyframes titleMod {
+	0% {opacity: 1; -webkit-transform:}
+	100% {opacity: 0; -webkit-transform:}
+}
+
+@keyframes titleMod {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+
+/* animation de défilement */
+@-webkit-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+
+/* animation de défilement pr titre*/
+@-webkit-keyframes scroll2 {
+	100% { top: 5%; }
+}
+
+@keyframes scroll2 {
+	100% { top: 5%; }
+}

@@ -2,3 +2,34 @@
 
 @import 'config';
 @import 'navigation';
+@import 'ui';
+
+
+/* CONTENT */
+
+.content{
+	width:100%;
+	position:relative;
+	top:100px;
+	font-family: 'Josefin Sans', sans-serif;
+    font-size:1.8em;
+    color: #8e786f;
+    z-index:1;
+}
+
+.fullpage{
+
+	overflow:hidden;
+
+	nav{
+		display:none;
+	}
+
+	.content{
+		height:100%;
+		top:0;
+	}
+
+}
+
+

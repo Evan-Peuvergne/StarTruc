@@ -1,0 +1,153 @@
+/* MENU */
+
+nav{
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100px;
+    background-color:black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:1.4em;
+    text-transform: uppercase;
+    color:#ffffff;
+    z-index:10;
+    
+    .nav-logo, .nav-title, .nav-menu{
+        height:100%;
+    }
+    
+    .nav-logo{
+        width:150px;
+        
+        img{
+            display: block;
+            position:relative;
+            width:auto;
+            height:50%;
+            top:25%;
+            margin:auto;
+        }
+        
+    }
+    
+    .nav-title{
+        flex:1;
+        padding-left:20px;
+        
+        h3{
+            position:relative;
+            border-left:2px solid #ffffff;
+            padding-left:20px;
+            top:calc(50% - 0.7em);
+        }
+        
+    }
+    
+    .nav-menu{
+        max-width:60%;
+        
+        .nav-menu-icon{
+            display:none;
+        }
+        
+        ul{
+            position:relative;
+            top: calc(50% - 0.7em);
+            text-align:right;
+            margin-right:20px;
+            
+            li{
+                display: inline-block;
+                border-left:2px solid #ffffff;
+                padding:0 20px;
+                
+                &:first-child{
+                    border-left:none;
+                }
+                
+                a{
+                    text-decoration: none;
+                    color:#ffffff;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    /* Responsive menu */
+            
+    @media screen and (max-width:800px){
+        
+        .nav-menu{
+            display:block;
+            position:relative;
+            width:10%;
+            
+            .nav-menu-icon{
+                display: block;
+                width:100%;
+                height:100%;
+                z-index:20;
+                
+                img{
+                    display: block;
+                    width:auto;
+                    height:30%;
+                    position:relative;
+                    top:30%;
+                    margin:auto;
+                }
+                
+            }
+            
+            ul{
+                display:flex;
+                width:900%;
+                height:100%;
+                position:relative;
+                left: -900%;
+                top:-200%;
+                background-color:#000000;
+                z-index:10;
+                transition:all 0.3s ease;
+                
+                li{
+                    flex:1;
+                    border:none;
+                    padding:0;
+                    position:relative;
+                    top:calc(50% - 0.7em);
+                    
+                    a{
+                        display: block;
+                        border-left:2px solid #ffffff;
+                        text-align:center;
+                    }
+                    
+                    &:first-child a{
+                        border-left:none;
+                    }
+                    
+                }
+                
+            }
+            
+            &.active{
+                top: 100%;
+                
+                .nav-menu-icon{
+                    position:relative;
+                    top:-100%;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
