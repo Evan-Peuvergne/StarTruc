@@ -75,8 +75,13 @@ function App (){
 					this.page = new Battle();
 					this.page.load();
 				break;
+				case "classement":
+					this.page = new Ranking();
+					this.page.load();
+				break;
 				case "":
-
+					this.page = new Home();
+					this.page.load(true);
 				break;
 				default:
 					alert("page d'erreur");

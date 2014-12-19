@@ -16,7 +16,7 @@
         color:#a38c7f;
         border:2px solid #a38c7f;
         
-        &:hover{
+        &:hover, &.btn-radio.btn-selected{
             background-color:#a38c7f;
             color:#ffffff;
         }

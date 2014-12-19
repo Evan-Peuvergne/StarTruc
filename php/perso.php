@@ -36,12 +36,15 @@
 				case "get-results":
 					getPersoResults($_POST['id']);
 				break;
-				case "get-ranking":
+				case "get-perso-ranking":
 					if(isset($_POST['ranking'])){
 						getPersoRanking($_POST['id'], $_POST['rank']);
 					}else{
 						getPersoRanking($_POST['id']);
 					}
+				break;
+				case "get-ranking":
+					getRanking($_POST["side"], $_POST["skill"]);
 				break;
 				case "set-battle-result":
 					setBattleResult($_POST['id1'], $_POST['id2'], $_POST['results']);
@@ -130,6 +133,19 @@
 						"podium" => $podium,
 						"perso" => $perso
 					)));
+				}
+
+				/* Get general ranking */
+
+				function getRanking ($side, $skill)
+				{
+					// Managin side
+					if($side != "*"){
+						$ranks = R::getAll("SELECT name, photos, global, fight, intellect, strength, charisma FROM persos WHERE side = :side ORDER BY ".$skill." desc", [':side' => $side]);
+					}else{
+						$ranks = R::getAll("SELECT name, photos, global, fight, intellect, strength, charisma FROM persos ORDER BY ".$skill." desc");
+					}
+					print_r(json_encode($ranks));
 				}
 
 

@@ -60,4 +60,5 @@
 <script src="assets/js/scripts/Persos.js"></script>
 <script src="assets/js/scripts/Perso.js"></script>
 <script src="assets/js/scripts/Battle.js"></script>
+<script src="assets/js/scripts/Ranking.js"></script>
 <script src="assets/js/scripts/app.js"></script>
