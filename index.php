@@ -36,7 +36,7 @@
 	                <img src="assets/img/icon-menu.png" alt="">
 	            </a>
 	            <ul>
-	                <li><a href="#personnages/epe">Personnage</a></li>
+	                <li><a href="#personnages">Personnage</a></li>
 	                <li><a href="#battle">Battle</a></li>
 	                <li><a href="#classement">Classement</a></li>
 	            </ul>
@@ -57,6 +57,7 @@
 <script src="assets/js/librairies/parallax.js"></script>
 <script src="assets/js/scripts/Page.js"></script>
 <script src="assets/js/scripts/Home.js"></script>
+<script src="assets/js/scripts/Persos.js"></script>
 <script src="assets/js/scripts/Perso.js"></script>
 <script src="assets/js/scripts/Battle.js"></script>
 <script src="assets/js/scripts/app.js"></script>

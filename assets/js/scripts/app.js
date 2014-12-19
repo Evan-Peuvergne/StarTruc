@@ -58,13 +58,14 @@ function App (){
 			switch(route)
 			{
 				case "personnages":
-					console.log('affichage des personnages');
+					this.page = new Persos();
+					this.page.load();
 				break;
 				case "personnage":
 					// Get perso id
 					var id = window.location.hash.substr(1, window.location.hash.length).split('/')[1];
 					if(!id){
-						alert('vous allez rencontrer une erreur');
+						window.location.hash = "#error";
 					}else{
 						this.page = new Perso(id);
 						this.page.load();	
@@ -74,9 +75,11 @@ function App (){
 					this.page = new Battle();
 					this.page.load();
 				break;
+				case "":
+
+				break;
 				default:
-					this.page = new Home();
-					this.page.load(true);
+					alert("page d'erreur");
 				break;
 			}
 		}

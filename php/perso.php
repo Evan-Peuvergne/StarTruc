@@ -66,7 +66,7 @@
 					$search = "%".$search."%";
 
 					// Get all persos
-					$persos = R::getAll("SELECT id, name, photos FROM persos WHERE name LIKE :search", [':search' => $search]);
+					$persos = R::getAll("SELECT id, name, description, photos FROM persos WHERE name LIKE :search", [':search' => $search]);
 
 					// Send response
 					print_r(json_encode($persos));

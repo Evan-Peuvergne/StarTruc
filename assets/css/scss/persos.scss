@@ -1,0 +1,248 @@
+.content-persos{
+    height:calc(100% - 120px);
+}
+
+.persos-slider{
+    position:relative;
+    width:70%;
+    height:90%;
+    margin:auto;
+    top:5%;
+
+    .perso-slider-slides{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:80%;
+        border-bottom:2px solid #dbcebe;
+        // overflow:hidden;
+
+        .perso-slides-container{
+            position:absolute;
+            top:0;
+            left:0;
+            height:100%;
+            transition:all 1s ease;
+
+            .persos-slide{
+                float:left;
+                height:100%;
+                position: relative;
+
+                .perso-slide-image{
+                    position:relative;
+                    width:60%;
+                    height:100%;   
+                    background-repeat: no-repeat;
+                    background-size:contain;
+                    background-position:bottom center;
+                }
+
+                .perso-slide-content{
+                    position:absolute;
+                    width:70%;
+                    height:100%;
+                    top:0;
+                    right:0;
+                    padding-top:5%;
+                    padding-left:18%;
+
+                    h3{
+                        position:relative;
+                        text-transform: uppercase;
+                        font-size:2em;
+                        z-index:20;
+                    }
+
+                    p{
+                        position:relative;
+                        z-index:20;
+                        margin-top:10%;
+                        line-height:1.2;
+                    }
+
+                    a.btn{
+                        position:absolute;
+                        bottom:5%;
+                        z-index:20;
+                    }
+
+                    .perso-slide-fade{
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        width:30%;
+                        height:100%;
+                        background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff);
+                        z-index:10;
+                    }
+
+                }
+
+            }
+        }
+
+        .perso-slider-controls{
+            position:absolute;
+            bottom:0;
+            right:0;
+            width:70px;
+            height:40px;
+            z-index:30;
+
+            a{
+                display:inline-block;
+                width:30px;
+                height:30px;
+
+                img{
+                    display: block;
+                    width:100%;
+                    height:100%;
+                }
+
+            }
+
+        }
+
+    }
+
+    .perso-slider-indexes{
+        position:absolute;
+        top:60%;
+        left:0;
+        width:100%;
+        height:30%;
+    }
+
+}
+
+// .slider{
+//     position: absolute;
+//     border-top: 1px solid #dbcebe;
+//     border-bottom: 1px solid #dbcebe;
+//     height: 395px;
+//     width: 880px;
+// }
+
+// .slide{
+//     float: left;
+//     height: 350px;
+//     font-family: FuturaMedium;
+//     width: 800px;
+// }
+// .slider .container{
+//     width: 40000px;
+//     height: inherit;
+//     position: absolute;
+//     -webkit-transition:transform 1s ease-out;
+//             transition:transform 1s ease-out;
+// }
+
+// .darkslider{
+//     right: 23%;
+//     top: 15%;
+// }
+
+// .slider .wrapper{
+//     position:absolute;
+//     top:0;
+//     right:40px;
+//     bottom:0;
+//     left:40px;
+//     overflow: hidden;
+// }
+
+// .slider .arrow-left{
+//     position: absolute;
+//     left:0;
+//     z-index: 10;
+//     height: inherit;
+//     width: 40px;
+// }
+
+// .slider .arrow-right{
+//     position: absolute;
+//     z-index: 10;
+//     height: inherit;
+//     width: 40px;
+//     right: -10px;
+// }
+
+// .dark-pic{
+//     height: 80%;
+//     width: 12em;
+//     margin-top: 11%;
+//     float: left;
+// }
+
+// .dark-description{
+//     height: 50%;
+//     color: #8E786F;
+//     width: 25em;
+//     float: left;
+//     margin-left: 10%;
+//     margin-top: 12%;
+// }
+// .dark-description h1{
+//     font-size: 1.5em;
+// }
+// .dark-description article{
+//     margin-top: 30px;
+//     font-size: 1em;
+//     line-height: 1.3em;
+// }
+// .darthmaul_btn{
+//     width: 66%;
+//     height: auto;
+//     padding: 9px;
+//     border: 1px solid #8E786F;
+//     cursor: pointer;
+//     letter-spacing: 1px;
+//     margin-top: 33px;
+// }
+
+// /* images des personnages */
+
+// .character{
+//     background: none repeat scroll 0% 0%;
+//     width: 100%;
+//     height: 120px;
+//     position: absolute;
+//     bottom: 7%;
+// }
+// .character-container{
+//     position: absolute;
+//     right: 20%;
+// }
+// .character-container div{
+//     float: left;
+//     margin-right: 10px;
+// }
+
+// .item {
+//     width:100px;
+//     height:100px;
+//     overflow:hidden;
+// }
+
+// .inner {
+//     width:100px;
+//     height:100px;
+//     overflow:hidden;
+//     -webkit-transform:rotate(45deg);
+//     -moz-transform:rotate(45deg);
+//     transform:rotate(45deg);
+// }
+// .content {
+//     width:100px;
+//     height:100px;
+//     -webkit-transform:rotate(-45deg);
+//     -moz-transform:rotate(-45deg);
+//     transform:rotate(-45deg);
+// }
+
+// .ch{
+//     width: 38%;
+// }
