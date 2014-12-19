@@ -1,0 +1,200 @@
+<link rel="stylesheet" href="assets/css/battle.css">
+    
+<div class="battle-full-container">
+
+    <div class="battle-full-section">
+        <div class="battle-header">
+    
+            <div class="battle-header-perso">
+                <div class="dropdown dropdown-persos" data-perso="1">
+                    <span>Perso 1</span>
+                    <input type="hidden" id="input-perso-1">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="battle-perso-background">
+                    <img src="assets/img/battle/jedi.png" alt="">
+                    <span class="separator"></span>
+                </div>
+            </div>
+    
+            <div class="battle-header-perso">
+                <div class="dropdown dropdown-persos" data-perso="2">
+                    <span>Perso 2</span>
+                    <input type="hidden" id="input-perso-1">
+                    <ul>
+                        <li><a href="#">Yoda</a></li>
+                        <li><a href="#">Dark Vador</a></li>
+                        <li><a href="#">Anakin</a></li>
+                    </ul>
+                </div>
+                <div class="battle-perso-background">
+                    <img src="assets/img/battle/jedi.png" alt="">
+                    <span class="separator"></span>
+                </div>
+            </div>
+    
+            <div class="battle-header-background">
+                <a href="#" class="btn btn-black btn-disabled btn-launch-battle">Battle !</a>
+            </div>
+      
+        </div>
+    </div>
+    
+    <div class="battle-full-section">
+        
+        <div class="battle-sliders">
+ 
+            <div class="battle-slider battle-slider-fight" data-result="0/0">
+                <div class="battle-slider-bar">
+                    <span>Combativité</span>
+                    <div class="battle-slider-range">
+                        <span class="battle-slider-range-left">0</span>
+                        <span class="battle-slider-range-right">0</span>
+                    </div>
+
+                </div>
+            </div>
+ 
+            <div class="battle-slider battle-slider-intellect" data-result="0/0">
+                <div class="battle-slider-bar">
+                    <span>Intelligence</span>
+                    <div class="battle-slider-range">
+                        <span class="battle-slider-range-left">0</span>
+                        <span class="battle-slider-range-right">0</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="battle-slider battle-slider-strength" data-result="0/0">
+                <div class="battle-slider-bar">
+                    <span>Force</span>
+                    <div class="battle-slider-range">
+                    <span class="battle-slider-range-left">0</span>
+                    <span class="battle-slider-range-right">0</span>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="battle-slider battle-slider-charisma" data-result="0/0">
+            <div class="battle-slider-bar">
+                <span>Charisme</span>
+                <div class="battle-slider-range">
+                    <span class="battle-slider-range-left">0</span>
+                    <span class="battle-slider-range-right">0</span>
+                </div>
+            </div>
+        </div>
+ 
+        <a href="#" class="btn btn-black btn-validate-results">Valider</a>
+ 
+    </div>
+
+    <div class="battle-full-section">
+        
+        <div class="battle-result">
+
+            <div class="battle-result-perso battle-result-p1">
+                <div class="battle-result-text">
+                    <h3>Victoire</h3>
+                    <span>76,5 %</span>
+                </div>
+                <div class="battle-result-background" style="background-image:url(mediasdatabase/images/persos/yoda.png);"></div>
+            </div>
+
+            <div class="battle-result-perso battle-result-p2">
+                <div class="battle-result-text">
+                    <h3>Defaite</h3>
+                    <span>34 %</span>
+                </div>
+                <div class="battle-result-background" style="background-image:url(mediasdatabase/images/persos/yoda.png);"></div>
+            </div>
+
+            <div class="battle-result-controls">
+                <a href="#personnages" class="btn btn-black btn-disabled">Continuer</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+  
+  $(document).ready(function (){
+
+    $('.dropdown span').click(function (e){
+        e.preventDefault();
+        if($(this).parent().hasClass('active')){
+            $(this).parent().removeClass('active');
+        }else{
+            $(this).parent().addClass('active');
+        }
+    });
+    
+    $('.battle-slider-range').bind({
+        mousedown: function (e)
+        {
+            e.preventDefault();
+            var slider = $(this);
+            var pos_in_bar = e.clientX - slider.offset().left;
+            var position = {
+                left: $(this).parent().offset().left,
+                right: $(this).parent().offset().left + $(this).parent().width()
+            }
+            $('body').on('mousemove', function (e)
+            {
+                var offset;
+                var x = e.clientX;
+                if((x - pos_in_bar) < position.left){
+                    offset = 0;
+                    slider.css({
+                        left: offset
+                    });
+                    setDatas (slider, offset);
+                }else if(x + (slider.width() - pos_in_bar) > position.right){
+                    offset = slider.parent().width()/2
+                    slider.css({
+                        left: offset
+                    });
+                    setDatas(slider, offset);
+                }else{
+                    var pos_in_slider = x - position.left;
+                    var offset = pos_in_slider - pos_in_bar;
+                    slider.css({
+                        left: pos_in_slider - pos_in_bar
+                    });
+                    setDatas(slider, offset);
+                }
+            });
+        },
+        mouseup: function (e)
+        {
+            e.preventDefault();
+            $('body').off();
+        }
+    });
+    
+});
+
+function setDatas(slider, offset)
+{
+    // Calculate scores
+    var p1, p2;
+    p1 = -parseInt(((offset - slider.width()/2)/slider.width())*200);
+    p2 = -p1;
+    
+    // Set data-result value
+    slider.parent().parent().attr('data-result', p1 + '/' + p2);
+    
+    // Set indicators values
+    slider.find('.battle-slider-range-left').html(p1);
+    slider.find('.battle-slider-range-right').html(p2);
+    
+}
+
+</script>

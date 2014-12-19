@@ -70,6 +70,10 @@ function App (){
 						this.page.load();	
 					}
 				break;
+				case "battle":
+					this.page = new Battle();
+					this.page.load();
+				break;
 				default:
 					this.page = new Home();
 					this.page.load(true);

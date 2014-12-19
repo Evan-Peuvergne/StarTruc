@@ -44,7 +44,7 @@
 					}
 				break;
 				case "set-battle-result":
-					setBattleResult($_POST['id1'], $_POST['id2'], $_POST['charisma'], $_POST['fight'], $_POST['intellect'], $_POST['force']);
+					setBattleResult($_POST['id1'], $_POST['id2'], $_POST['results']);
 				break;
 			}
 
@@ -66,7 +66,7 @@
 					$search = "%".$search."%";
 
 					// Get all persos
-					$persos = R::getAll("SELECT * FROM persos WHERE name LIKE :search", [':search' => $search]);
+					$persos = R::getAll("SELECT id, name, photos FROM persos WHERE name LIKE :search", [':search' => $search]);
 
 					// Send response
 					print_r(json_encode($persos));
@@ -135,21 +135,27 @@
 
 			/* Udpating */
 
-			function setBattleResult ($id1, $id2, $charisma, $fight, $intellect, $force)
+			function setBattleResult ($id1, $id2, $results)
 			{
 				// Get persos
 				$perso1 = R::findOne('persos', 'id='.$id1);
 				$perso2 = R::findOne('persos', 'id='.$id2);
+
+				// print_r(json_encode($results));
 				
-				// Set caracteristics
-				if($charisma >= -100 && $charisma <= 100){ $perso1->charisma = $perso1->charisma + $charisma; $perso2->charisma = $perso2->charisma + (-$charisma); }
-				if($fight >= -100 && $fight <= 100){ $perso1->fight = $perso1->fight + $fight; $perso2->fight = $perso2->fight + (-$fight); }
-				if($intellect >= -100 && $intellect <= 100){ $perso1->intellect = $perso1->intellect + $intellect; $perso2->intellect = $perso2->intellect + (-$intellect); }
-				if($force >= -100 && $force <= 100){ $perso1->force = $perso1->force + $force; $perso2->force = $perso2->force + (-$force); }
-				
-				// Global score
-				$perso1->global = intval(($perso1->charisma + $perso1->fight + $perso1->intellect + $perso1->force)/4);
-				$perso2->global = intval(($perso2->charisma + $perso2->fight + $perso2->intellect + $perso2->force)/4);
+				// Set new caracteristics for perso1
+				$perso1->fight = average($perso1->fight, $results["fight"][0], $perso1->battles);
+				$perso1->intellect = average($perso1->intellect, $results["intellect"][0], $perso1->battles);
+				$perso1->strength = average($perso1->strength, $results["strength"][0], $perso1->battles);
+				$perso1->charisma = average($perso1->charisma, $results["charisma"][0], $perso1->battles);
+				$perso1->global = average($perso1->global, $results["global"][0], $perso1->battles);
+
+				// Set new caracteristics for perso2
+				$perso2->fight = average($perso2->fight, $results["fight"][1], $perso2->battles);
+				$perso2->intellect = average($perso2->intellect, $results["intellect"][1], $perso2->battles);
+				$perso2->strength = average($perso2->strength, $results["strength"][1], $perso2->battles);
+				$perso2->charisma = average($perso2->charisma, $results["charisma"][1], $perso2->battles);
+				$perso2->global = average($perso2->global, $results["global"][1], $perso2->battles);
 
 				// Update battles counter
 				$perso1->battles++;
@@ -163,6 +169,10 @@
 				print_r(json_encode(array(
 					"success" => true
 				)));
+			}
+
+			function average($old, $new, $ratio){
+				return (($old*$ratio)+$new)/($ratio+1);
 			}
 
 ?>

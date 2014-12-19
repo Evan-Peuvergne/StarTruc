@@ -13,7 +13,7 @@
 		<title>StarTruc</title>
 
 		<!-- CSS -->
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/reset.css">
 		<link rel="stylesheet" href="assets/css/main.css">
 
@@ -47,11 +47,6 @@
 		<div class="content">
 			
 		</div>
-
-		<!-- LOADING -->
-		<!-- <div class="loader loading">
-			<span>Loading</span>
-		</div> -->
 		
 	</body>
 
@@ -59,7 +54,9 @@
 
 <!-- Scripts -->
 <script src="assets/js/librairies/jquery.js"></script>
+<script src="assets/js/librairies/parallax.js"></script>
 <script src="assets/js/scripts/Page.js"></script>
 <script src="assets/js/scripts/Home.js"></script>
 <script src="assets/js/scripts/Perso.js"></script>
+<script src="assets/js/scripts/Battle.js"></script>
 <script src="assets/js/scripts/app.js"></script>

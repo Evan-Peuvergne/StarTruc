@@ -39,59 +39,60 @@
       display: inline-block;
       vertical-align: text-top;
       border-right: 2px solid #d7c8b7;
-      padding-bottom: 40px; }
-      /* line 48, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      padding-bottom: 40px;
+      padding-right: 20px; }
+      /* line 49, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .content.content-perso .perso-section .perso-section-content .perso-section-col h3 {
         color: #432e2a;
         text-transform: uppercase;
         margin-bottom: 30px; }
-      /* line 54, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 55, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .content.content-perso .perso-section .perso-section-content .perso-section-col h4 {
         font-size: 0.9em;
         line-height: 1.2;
         margin-top: 10px;
         font-weight: 400; }
-        /* line 60, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 61, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .content.content-perso .perso-section .perso-section-content .perso-section-col h4:first-child {
           margin-top: 0px; }
-      /* line 66, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 67, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .content.content-perso .perso-section .perso-section-content .perso-section-col span {
         font-size: 0.8em;
         line-height: 1.2; }
-      /* line 71, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 72, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .content.content-perso .perso-section .perso-section-content .perso-section-col p {
         font-size: 0.8em;
         line-height: 1.2; }
-      /* line 76, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 77, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .content.content-perso .perso-section .perso-section-content .perso-section-col img {
         display: block;
         width: 50%;
         height: auto;
         margin-top: 20px; }
     @media screen and (min-width: 900px) {
-      /* line 87, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 88, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .content.content-perso .perso-section .perso-section-content .perso-section-col {
         width: 27%;
         margin-right: 5%;
         margin-bottom: 70px; }
-        /* line 93, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 94, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .content.content-perso .perso-section .perso-section-content .perso-section-col:nth-child(3n) {
           margin-right: 0px;
           border-right: none; }
  }
     @media screen and (max-width: 900px) and (min-width: 600px) {
-      /* line 103, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 104, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .content.content-perso .perso-section .perso-section-content .perso-section-col {
         width: 40%;
         margin-right: 5%;
         margin-bottom: 70px; }
-        /* line 108, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 109, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .content.content-perso .perso-section .perso-section-content .perso-section-col:nth-child(2n) {
           margin-right: 0x;
           border-right: none; }
  }
     @media screen and (max-width: 600px) {
-      /* line 118, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 119, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .content.content-perso .perso-section .perso-section-content .perso-section-col {
         width: 90%;
         margin-right: 0;
@@ -100,21 +101,21 @@
  }
 
 /* Intro */
-/* line 141, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+/* line 142, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
 .perso-intro .perso-section-aside img {
   display: block;
   width: 100%;
   height: auto; }
-/* line 149, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+/* line 150, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
 .perso-intro .perso-section-content {
   padding-top: 50px !important; }
-  /* line 152, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 153, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-intro .perso-section-content h1 {
     font-size: 3em;
     text-transform: uppercase;
     color: #645152;
     margin-top: 20px; }
-  /* line 159, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 160, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-intro .perso-section-content p {
     width: 90%;
     margin-top: 30px;
@@ -122,13 +123,13 @@
     line-height: 1.4; }
 
 /* Videos */
-/* line 178, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+/* line 179, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
 .perso-videos .perso-section-content .perso-section-col.perso-video {
   border-right: none !important; }
-  /* line 181, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 182, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-videos .perso-section-content .perso-section-col.perso-video h3 {
     margin-bottom: 20px; }
-  /* line 185, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 186, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-videos .perso-section-content .perso-section-col.perso-video .perso-video-poster {
     position: relative;
     width: 100%;
@@ -136,7 +137,7 @@
     background-size: cover;
     background-position: auto;
     overflow: hidden; }
-    /* line 193, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+    /* line 194, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
     .perso-videos .perso-section-content .perso-section-col.perso-video .perso-video-poster .overflow {
       position: absolute;
       top: 0;
@@ -147,7 +148,7 @@
       text-align: center;
       opacity: 0;
       transition: all 0.3s ease; }
-      /* line 204, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 205, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-videos .perso-section-content .perso-section-col.perso-video .perso-video-poster .overflow .btn {
         margin-top: 0;
         position: relative;
@@ -155,18 +156,18 @@
         top: -50px;
         font-size: 0.8em;
         transition: all 0.5s ease; }
-      /* line 213, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 214, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-videos .perso-section-content .perso-section-col.perso-video .perso-video-poster .overflow:hover {
         opacity: 1; }
-        /* line 216, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 217, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-videos .perso-section-content .perso-section-col.perso-video .perso-video-poster .overflow:hover .btn {
           top: 35%; }
 
 /* Stories */
-/* line 239, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+/* line 240, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
 .perso-stories .perso-section-content ul {
   list-style: none; }
-  /* line 242, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 243, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-stories .perso-section-content ul li {
     margin-bottom: 40px;
     border-left: 2px solid #d7c8b7;
@@ -174,14 +175,14 @@
     line-height: 1.2; }
 
 /* Cult */
-/* line 262, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+/* line 263, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
 .perso-cult .perso-section-content blockquote {
   width: 70%;
   margin: auto;
   font-size: 3em;
   text-align: left;
   font-weight: 400; }
-  /* line 269, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 270, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-cult .perso-section-content blockquote:before {
     display: block;
     content: "";
@@ -193,7 +194,7 @@
     position: relative;
     left: -70px;
     top: 30px; }
-  /* line 282, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 283, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-cult .perso-section-content blockquote:after {
     display: block;
     float: right;
@@ -210,10 +211,10 @@
             transform: scaleX(-1); }
 
 /* Stats */
-/* line 309, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+/* line 310, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
 .perso-stats .perso-section-content .perso-skills {
   width: 90%; }
-  /* line 312, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 313, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-stats .perso-section-content .perso-skills ul {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -222,7 +223,7 @@
     position: relative;
     height: 150px;
     list-style: none; }
-    /* line 319, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+    /* line 320, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
     .perso-stats .perso-section-content .perso-skills ul li {
       -webkit-flex: 1;
           -ms-flex: 1;
@@ -230,7 +231,7 @@
       height: 100%;
       background-color: #bdaa98;
       position: relative; }
-      /* line 325, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 326, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li:after {
         display: block;
         content: "";
@@ -243,10 +244,10 @@
         left: calc(50% - 20px);
         top: 20%;
         z-index: -10; }
-      /* line 339, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 340, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li.active:after {
         top: 100%; }
-      /* line 343, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 344, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li a {
         display: block;
         position: absolute;
@@ -255,7 +256,7 @@
         width: 100%;
         height: 100%;
         z-index: 20; }
-        /* line 352, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 353, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li a img {
           display: block;
           width: auto;
@@ -264,12 +265,12 @@
           position: relative;
           top: 15%; }
         @media screen and (max-width: 600px) {
-          /* line 363, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+          /* line 364, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
           .perso-stats .perso-section-content .perso-skills ul li a img {
             width: 50%;
             height: auto; }
  }
-        /* line 370, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 371, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li a .perso-skill-data {
           display: block;
           width: 100%;
@@ -279,18 +280,18 @@
           font-size: 0.8em;
           color: #ffffff;
           text-transform: uppercase; }
-          /* line 380, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+          /* line 381, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
           .perso-stats .perso-section-content .perso-skills ul li a .perso-skill-data h4 {
             position: relative;
             display: block; }
-          /* line 385, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+          /* line 386, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
           .perso-stats .perso-section-content .perso-skills ul li a .perso-skill-data span {
             margin-top: 3px;
             font-size: 0.9em !important;
             font-weight: 400;
             display: block;
             font-size: 0.6em; }
-      /* line 397, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 398, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li .perso-skill-progress {
         position: absolute;
         bottom: 0;
@@ -299,58 +300,58 @@
         z-index: 10;
         opacity: 0.5;
         transition: all 0.2s ease; }
-      /* line 409, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 410, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li:hover .perso-skill-progress {
         opacity: 1;
         height: 100% !important; }
-      /* line 416, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 417, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li.perso-skill-global {
         background-color: #bdaa98; }
-        /* line 419, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 420, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-global .perso-skill-progress {
           background-color: #000000; }
-        /* line 423, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 424, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-global:after {
           border-top-color: #bdaa98; }
-      /* line 429, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 430, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li.perso-skill-fight {
         background-color: #a69081; }
-        /* line 432, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 433, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-fight .perso-skill-progress {
           background-color: #352932; }
-        /* line 436, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 437, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-fight:after {
           border-top-color: #a69081; }
-      /* line 442, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 443, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li.perso-skill-intellect {
         background-color: #f7f3ee; }
-        /* line 445, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 446, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-intellect .perso-skill-progress {
           background-color: #e2d7c7; }
-      /* line 451, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 452, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li.perso-skill-strength {
         background-color: #ad9788; }
-        /* line 454, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 455, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-strength .perso-skill-progress {
           background-color: #42343b; }
-        /* line 458, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 459, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-strength:after {
           border-top-color: #ad9788; }
-      /* line 464, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 465, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-skills ul li.perso-skill-cool {
         background-color: #dfd4c4; }
-        /* line 467, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 468, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-cool .perso-skill-progress {
           background-color: #7b6560; }
-        /* line 471, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+        /* line 472, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
         .perso-stats .perso-section-content .perso-skills ul li.perso-skill-cool:after {
           border-top-color: #dfd4c4; }
-/* line 483, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+/* line 484, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
 .perso-stats .perso-section-content .perso-ranks {
   width: 90%;
   margin-top: 50px;
   list-style: none; }
-  /* line 488, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+  /* line 489, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
   .perso-stats .perso-section-content .perso-ranks .perso-ranking {
     position: relative;
     width: 100%;
@@ -358,7 +359,7 @@
     background-color: #f0eae1;
     border-radius: 2px;
     margin-bottom: 5px; }
-    /* line 496, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+    /* line 497, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
     .perso-stats .perso-section-content .perso-ranks .perso-ranking .perso-ranking-datas {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -369,7 +370,7 @@
       width: 100%;
       height: 100%;
       z-index: 20; }
-      /* line 505, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 506, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-ranks .perso-ranking .perso-ranking-datas .perso-ranking-number {
         position: relative;
         width: 36px;
@@ -386,7 +387,7 @@
         padding-top: 10px;
         color: #a38c7f;
         text-align: center; }
-      /* line 523, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 524, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-ranks .perso-ranking .perso-ranking-datas .perso-ranking-picture {
         position: relative;
         top: 2px;
@@ -394,7 +395,7 @@
         padding-left: 2px;
         height: 36px;
         width: auto; }
-      /* line 532, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 533, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-ranks .perso-ranking .perso-ranking-datas .perso-ranking-name {
         position: relative;
         top: calc(50% - 0.35em);
@@ -402,14 +403,14 @@
         text-transform: uppercase;
         color: #ffffff;
         font-weight: 400; }
-    /* line 543, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+    /* line 544, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
     .perso-stats .perso-section-content .perso-ranks .perso-ranking .perso-ranking-progress {
       position: absolute;
       height: calc(100% - 4px);
       width: calc(100% - 4px);
       top: 2px;
       left: 2px; }
-      /* line 550, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 551, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-ranks .perso-ranking .perso-ranking-progress span {
         display: block;
         position: absolute;
@@ -423,14 +424,14 @@
         padding-right: 10px;
         color: #ffffff;
         text-transform: uppercase; }
-    /* line 567, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+    /* line 568, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
     .perso-stats .perso-section-content .perso-ranks .perso-ranking.focus {
       margin-top: 30px;
       background-color: #c3b09e; }
-      /* line 571, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 572, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-ranks .perso-ranking.focus .perso-ranking-datas .perso-ranking-number {
         background-color: #957e73;
         color: #645152; }
-      /* line 576, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
+      /* line 577, /Users/evanpeuvergne/Documents/Projets/Startruc/Site/assets/css/scss/perso.scss */
       .perso-stats .perso-section-content .perso-ranks .perso-ranking.focus .perso-ranking-progress span {
         background-color: #a38c7f; }

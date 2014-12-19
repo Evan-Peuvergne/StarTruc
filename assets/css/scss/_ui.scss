@@ -10,6 +10,7 @@
     padding:15px 40px;
     margin:20px 0px;
     transition:all 0.3s ease;
+    opacity:1;
     
     &.btn-black{
         color:#a38c7f;
@@ -32,4 +33,9 @@
         }
     }
     
+    &.btn-disabled{
+        opacity:0;
+        transition:all 0.3s ease;
+    }
+
 }

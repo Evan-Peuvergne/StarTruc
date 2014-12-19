@@ -1,11 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+
 <script>
 
-	var datas = [
-		'Suivant les langues, Yoda singifie : "guerrier" en sanskrit, "celui qui sait" en hébreu et "je sais" en grec.',
-		'Sa canne est en réalité ce qui permet le déplacement de la marionnette.',
-		"Yoda a une manière spéciale de parler, l'hyperbate, qui consiste en une inversion objet, sujet, verbe."
+	/* Photos */
+	// Mettre les photos en question dans "medias/images/persos/"
+
+	var photos = {
+		full: "yoda.png",
+		half: "yoda_half.png"
+	}
+
+	document.write(JSON.stringify(photos));
+	document.write('</br></br>');
+
+
+	/* Identité */
+
+	var identities = [
+		{
+			title: "Dates",
+			section: [
+				{
+					title: "Naissance",
+					value: "896 av BY"
+				},
+				{
+					title: "Décès",
+					value: "4 ap BY"
+				}
+			]
+		},
+		{
+			title: "Titre info 2",
+			value: "Text info 2",
+			// image: "armes/photo.png"
+		}
 	];
 
-	document.write(JSON.stringify(datas));
+	document.write(JSON.stringify(identities));
+	document.write('</br></br>');
+
+
+	/* Videos */
+	// Mettre les images dans "medias/images/posters/url.jpg ou png"
+	// Mettre les videos dans "medias/videos/persos/" (juste en mp4 dans un prermier temps)
+
+	var videos = [
+		{
+			title: "Titre de la video",
+			poster: "url.jpg", // ne pas mettre posters/url.jpg
+			sources: "url" // ne pas mettre l'extension .pm4
+		}
+	];
+
+	document.write(JSON.stringify(videos));
+	document.write('</br></br>');
+
+
+	/* Anecdotes */
+
+	var anecdotes = [
+		"anecdote 1",
+		"anecdote 2",
+		"anecdote 2"
+	];
+
+	document.write(JSON.stringify(anecdotes));
+
+
 
 </script>

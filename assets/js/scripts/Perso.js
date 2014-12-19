@@ -72,21 +72,28 @@ function fillDatas (data, html)
 	$(html).find('.perso-intro h1').html(data.name);
 	$(html).find('.perso-intro p').html(data.description);
 
+	/* Photo */
+
+	var photos = JSON.parse(data.photos);
+	console.log(photos);
+	$(html).find('.perso-section-aside img').attr('src', 'mediasdatabase/images/persos/' + photos.half);
+
 	/* Identity */
 
 	var identities = JSON.parse(data.identity);
+	console.log(identities);
 	var code = "";
 	for(var i=0; i<identities.length; i++)
 	{
 		var identity = identities[i];
 		code += '<div class="perso-section-col">';
 		if(identity.title){ code += '<h3>' + identity.title + '</h3>'; }
-		if(identity.sections)
+		if(identity.section)
 		{
 			code += "<p>";
-			for(var j=0; j<identity.sections.length; j++){
-				var section = identity.sections[j];
-				code += "<h4>" + section.title + "</h4><span>" + section.value + "<span>";
+			for(var j=0; j<identity.section.length; j++){
+				var section = identity.section[j];
+				code += "<h4>" + section.title + "</h4><span>" + section.value + "</span>";
 			}
 			code += "</p>";
 		}else{
